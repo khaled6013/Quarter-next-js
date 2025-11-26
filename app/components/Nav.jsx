@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FiUser, FiHeart, FiSearch } from "react-icons/fi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Link from "next/link";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
@@ -13,12 +14,14 @@ const Nav = () => {
                 <div className="lg:w-10/12 w-11/12 mx-auto">
                     <div className="flex justify-between items-center">
                         <div>
+                            <Link href="/">
                             <img src="/image/logo.png" alt="logo" className="w-[130px]" />
+                            </Link>
                         </div>
                         <div className="hidden lg:flex items-center gap-x-8">
                             <ul className="flex items-center gap-x-9">
-                                <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Home</a></li>
-                                <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Properties</a></li>
+                                <li><Link href="/" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Home</Link></li>
+                                <li><Link href="/properties" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Properties</Link></li>
                                 <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Property</a></li>
                                 <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Blog</a></li>
                                 <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Pages</a></li>
