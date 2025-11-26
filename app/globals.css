@@ -1,2 +1,8 @@
 @import "tailwindcss";
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+.font-nunito {
+  font-family: var(--font-nunito), sans-serif;
+}
 
