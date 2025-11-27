@@ -1,8 +1,8 @@
 import React from 'react'
-import { AiTwotoneHome } from "react-icons/ai";        // Smart Home
-import { MdLandscape } from "react-icons/md";          // Beautiful Scene
-import { GiWeightLiftingUp } from "react-icons/gi";    // Lifestyle
-import { RiShieldCheckLine } from "react-icons/ri";    // Security
+import { AiTwotoneHome } from "react-icons/ai";     
+import { MdLandscape } from "react-icons/md";         
+import { GiWeightLiftingUp } from "react-icons/gi";    
+import { RiShieldCheckLine } from "react-icons/ri";    
 
 const Marketplace = () => {
     return (
