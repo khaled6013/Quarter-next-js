@@ -5,7 +5,7 @@ const Banner = () => {
   
   return (
     <>
-      <div className="bg-[#F2F6F7] lg:py-[100px] py-12 relative overflow-hidden">
+      <div className="bg-[#F2F6F7] lg:py-[100px] py-12 relative ">
         <div className="lg:w-9/12 w-11/12 mx-auto">
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-y-10">
@@ -51,7 +51,7 @@ const Banner = () => {
             </div>
           </div>
 
-        <div className="flex  mt-14">
+        <div className="flex lg:absolute lg:bottom-[-50px]  lg:left-1/2 lg:-translate-x-1/2 lg:w-9/12 w-full z-20! mt-10 lg:mt-0">
           <div className="bg-white shadow-xl justify-between  lg:w-9/12 w-11/12 px-8 py-8 flex flex-col lg:flex-row gap-4 items-center">
             <select className="w-full bg-white border border-gray-300 px-4 py-3 outline-1 outline-[#FF5A3C] text-[#5C5B7B] font-bold font-nunito">
               <option>Choose Area</option>
