@@ -4,7 +4,7 @@ import Banner from './components/Banner'
 
 const page = () => {
   return (
-    <div className='mt-30'>
+    <div className=''>
       <Banner></Banner>
     </div>
   )

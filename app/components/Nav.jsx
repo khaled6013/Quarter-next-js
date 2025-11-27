@@ -11,11 +11,11 @@ const Nav = () => {
     return (
         <>
             <div className="bg-white w-full pt-5 pb-[15px]">
-                <div className="lg:w-10/12 w-11/12 mx-auto">
+                <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className="flex justify-between items-center">
                         <div>
                             <Link href="/">
-                            <img src="/image/logo.png" alt="logo" className="w-[130px]" />
+                            <img src="/image/logo.png" alt="logo" className="lg:w-[130px] w-full" />
                             </Link>
                         </div>
                         <div className="hidden lg:flex items-center gap-x-8">

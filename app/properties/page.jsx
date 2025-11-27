@@ -2,7 +2,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div className='mt-30'>properties page done</div>
+    <div className=''>properties page done</div>
   )
 }
 
