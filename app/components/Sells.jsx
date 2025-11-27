@@ -3,10 +3,10 @@ import React from 'react'
 const Sells = () => {
   return (
     <>
-      <div className="lg:py-20 py-10">
+      <div className="lg:pt-20 pt-10">
         <div className="lg:w-9/12 w-11/12 mx-auto">
           <div className="lg:flex justify-between gap-10">
-            <div className="lg:w-1/2 w-full">
+            <div className="lg:w-1/2 w-2/2">
               <div className="bg-[#FFEDE8] text-[#FF5A3C] px-5 py-1 w-fit rounded-full text-sm  mb-4 font-nunito font-bold">
                 About Us
               </div>
@@ -75,21 +75,21 @@ const Sells = () => {
 
             </div>
 
-            <div className="lg:w-1/2 w-full mt-10 lg:mt-0 flex gap-4">
+            <div className="lg:w-1/2 w-2/2 mt-10 lg:mt-0 flex gap-4">
               <div className="w-1/2">
                 <img
                   src="/image/sellR1.png"
-                  className="w-full h-[78%] object-cover"
+                  className="w-full h-[78%] "
                 />
               </div>
               <div className="w-1/2 flex flex-col gap-4">
                 <img
                   src="/image/sellR2.png"
-                  className="w-full h-[38%] object-cover "
+                  className="w-full h-[38%]  "
                 />
                 <img
                   src="/image/sellR3.png"
-                  className="w-full h-[38%] object-cover "
+                  className="w-full h-[38%]  "
                 />
               </div>
 
