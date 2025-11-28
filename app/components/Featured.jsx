@@ -11,11 +11,11 @@ import { TfiVideoClapper } from "react-icons/tfi";
 import { IoCameraSharp } from "react-icons/io5";
 
 const Featured = () => {
-  
+
     const featuredData = [
         {
             id: 1,
-            image: "/image/sl3.png", 
+            image: "/image/sl3.png",
             type: "FOR RENT",
             price: "349.00",
             title: "Light and modern apartment",
@@ -30,7 +30,7 @@ const Featured = () => {
         },
         {
             id: 2,
-            image: "/image/sell2.png", 
+            image: "/image/sell2.png",
             type: "FOR SALE",
             price: "450,000",
             title: "Luxury Family Home",
@@ -108,7 +108,7 @@ const Featured = () => {
                 settings: { slidesToShow: 2 }
             },
             {
-                breakpoint: 350,
+                breakpoint: 640,
                 settings: { slidesToShow: 1 }
             }
         ]
@@ -117,7 +117,7 @@ const Featured = () => {
     return (
         <>
             <div className="lg:py-20 py-10 relative">
-                <div className="lg:w-11/12 w-11/12 mx-auto">
+                <div className="lg:w-11/12 w-10/12 mx-auto">
                     <div className="mb-12 text-center">
                         <p className="bg-[#FFEDE8] text-[#FF5A3C] font-bold px-5 py-1 rounded-full w-fit text-sm mb-3 font-nunito text-center mx-auto">
                             Properties
@@ -129,16 +129,16 @@ const Featured = () => {
 
                     <Slider {...settings}>
                         {featuredData.map((item) => (
-                            <div key={item.id} className="px-3">
-                                <div className="bg-white shadow-lg overflow-hidden w-full duration-300">
+                            <div key={item.id} className="lg:px-3">
+                                <div className="bg-white lg:shadow-lg overflow-hidden w-full duration-300">
                                     <div className="relative">
                                         <img
-                                            src={item.image} 
+                                            src={item.image}
                                             alt={item.title}
                                             className="w-full h-[260px] object-cover"
                                         />
                                         <p className="absolute top-4 right-4 bg-[#FF5A3C] text-white text-[12px] px-3 py-1 font-semibold">
-                                            {item.type} 
+                                            {item.type}
                                         </p>
                                         <div className="absolute bottom-4 right-4 flex items-center gap-3">
                                             <button className="bg-white p-1.5 shadow-md hover:bg-gray-100">
@@ -150,7 +150,7 @@ const Featured = () => {
                                         </div>
                                         <div className="absolute bottom-4 left-4 flex items-center text-white gap-2">
                                             <IoLocationOutline className="text-[20px]" />
-                                            <p className="text-sm font-medium">{item.address}</p> 
+                                            <p className="text-sm font-medium">{item.address}</p>
                                         </div>
                                     </div>
 
@@ -165,7 +165,7 @@ const Featured = () => {
                                             {item.title}
                                         </h3>
                                         <p className="text-[#5C727D] text-[13px] leading-5 mb-3 font-nunito h-10 overflow-hidden">
-                                            {item.desc} 
+                                            {item.desc}
                                         </p>
 
                                         <div className="flex items-center gap-x-4 pt-4 border-b pb-6 border-[#C1C1C1]">
