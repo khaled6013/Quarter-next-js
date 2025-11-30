@@ -6,6 +6,7 @@ import Sells from './components/Sells'
 import Focus from './components/Focus'
 import Featured from './components/Featured'
 import Apartment from './components/Apartment'
+import Listing from './components/Listing'
 
 
 const page = () => {
@@ -18,6 +19,7 @@ const page = () => {
       <Focus></Focus>
       <Featured></Featured>
       <Apartment></Apartment>
+      <Listing></Listing>
     </div>
   )
 }

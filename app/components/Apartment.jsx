@@ -134,12 +134,11 @@ const ApartmentPlan = () => {
                 </div>
             </div>
             <div className="lg:mt-25 mt-10 lg:w-12/12 w-11/12 mx-auto">
-                <div className="relative w-full pb-[56.25%]">
+                <div className="relative w-full">
                     <iframe
                         className=" w-full h-[350px]"
                         src="https://www.youtube.com/embed/DmsZG2jwqto?si=Ajn4SIqMV39GVXkX"
                         title="YouTube video player"
-                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
