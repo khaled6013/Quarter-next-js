@@ -8,6 +8,7 @@ import Featured from './components/Featured'
 import Apartment from './components/Apartment'
 import Listing from './components/Listing'
 import Client from './components/Client'
+import Leatest from './components/Leatest'
 
 
 const page = () => {
@@ -22,6 +23,7 @@ const page = () => {
       <Apartment></Apartment>
       <Listing></Listing>
       <Client></Client>
+      <Leatest></Leatest>
     </div>
   )
 }
