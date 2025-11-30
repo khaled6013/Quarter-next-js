@@ -7,6 +7,7 @@ import Focus from './components/Focus'
 import Featured from './components/Featured'
 import Apartment from './components/Apartment'
 import Listing from './components/Listing'
+import Client from './components/Client'
 
 
 const page = () => {
@@ -20,6 +21,7 @@ const page = () => {
       <Featured></Featured>
       <Apartment></Apartment>
       <Listing></Listing>
+      <Client></Client>
     </div>
   )
 }
