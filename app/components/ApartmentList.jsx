@@ -61,10 +61,12 @@ const ApartmentList = () => {
                         <div className="flex justify-between gap-5">
                             <div className="lg:w-3/12">
                                 {/* properType.jsx  */}
-                                <PropertyType></PropertyType>
+                                {/* <PropertyType></PropertyType> */}
+                                <h2>fhfhfh</h2>
                             </div>
                             <div className="lg:w-9/12">
-                                <PropertyList></PropertyList>
+                                {/* <PropertyList></PropertyList> */}
+                                <h2>yrgcbfdgg</h2>
                             </div>
                         </div>
                     </div>
