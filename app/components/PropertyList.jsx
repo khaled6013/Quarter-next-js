@@ -2,7 +2,9 @@ import React from 'react'
 
 const PropertyList = () => {
   return (
-    <div>PropertyList</div>
+    <div className="w-full">
+      
+    </div>
   )
 }
 
