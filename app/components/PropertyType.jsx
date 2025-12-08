@@ -121,7 +121,7 @@ const PropertyType = () => {
                 </div>
                 <div className="border-b border-gray-200 pb-6 lg:mt-5 ">
                     <h3 className="font-bold text-[#0A2C3D] text-[20px] font-poppins mb-6">
-                      Price Renge
+                      Catagory
                     </h3>
                     <ul className="flex flex-col gap-y-4">
                         {Catagory.map((item,indexThree) => (

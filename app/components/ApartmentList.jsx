@@ -1,10 +1,21 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import { FaList } from "react-icons/fa";
 import { PiSquaresFourDuotone } from "react-icons/pi";
 import PropertyType from './PropertyType';
 import PropertyList from './PropertyList';
 
 const ApartmentList = () => {
+    const [activeView, setActiveView] = useState('grid');
+
+    const handleList = () => {
+        setActiveView('list');
+    }
+
+    const handleSquare = () => {
+        setActiveView('grid');
+    }
+
     return (
         <>
             <div className="lg:py-20 py-10 bg-white">
@@ -13,7 +24,7 @@ const ApartmentList = () => {
                         <h2 className='font-bold text-[#0A2C3D] text-[22px] lg:text-[25px] font-poppins text-center lg:text-left'>
                             Advance Information
                         </h2>
-                        <div className="flex flex-wrap items-center  lg:justify-end gap-4 lg:gap-x-4">
+                        <div className="flex flex-wrap items-center lg:justify-end gap-4 lg:gap-x-4">
                             <div className="flex items-center gap-3">
                                 <span className="text-[#0F172A] font-normal text-[14px] lg:text-[16px] font-poppins whitespace-nowrap">Per Page:</span>
                                 <div className="relative">
@@ -47,10 +58,22 @@ const ApartmentList = () => {
                                 </div>
                             </div>
                             <div className="flex items-center gap-2 ml-0 lg:ml-2">
-                                <button className="p-2 bg-white border border-[#E2E8F0] rounded text-[#8B93BB] hover:border-[#8B93BB] transition-all">
+                                <button
+                                    onClick={handleSquare}
+                                    className={`p-2 rounded border transition-all shadow-sm ${activeView === 'grid'
+                                            ? 'bg-[#FF5A3C] border-[#FF5A3C] text-white' 
+                                            : 'bg-white border-[#E2E8F0] text-[#8B93BB] hover:border-[#8B93BB]' 
+                                        }`}
+                                >
                                     <PiSquaresFourDuotone className="text-xl" />
                                 </button>
-                                <button className="p-2 bg-[#FF5A3C] border border-[#FF5A3C] rounded text-white transition-all shadow-sm">
+                                <button
+                                    onClick={handleList}
+                                    className={`p-2 rounded border transition-all shadow-sm ${activeView === 'list'
+                                            ? 'bg-[#FF5A3C] border-[#FF5A3C] text-white' 
+                                            : 'bg-white border-[#E2E8F0] text-[#8B93BB] hover:border-[#8B93BB]' 
+                                        }`}
+                                >
                                     <FaList className="text-xl" />
                                 </button>
                             </div>
@@ -58,15 +81,12 @@ const ApartmentList = () => {
                         </div>
                     </div>
                     <div className="lg:mt-10 mt-5">
-                        <div className="flex justify-between gap-5">
-                            <div className="lg:w-3/12">
-                                {/* properType.jsx  */}
-                                {/* <PropertyType></PropertyType> */}
-                                <h2>fhfhfh</h2>
+                        <div className="lg:flex justify-between gap-8">
+                            <div className="lg:w-3/12 w-full">
+                                <PropertyType />
                             </div>
-                            <div className="lg:w-9/12">
-                                {/* <PropertyList></PropertyList> */}
-                                <h2>yrgcbfdgg</h2>
+                            <div className="lg:w-9/12 w-full">
+                                <PropertyList  />
                             </div>
                         </div>
                     </div>
