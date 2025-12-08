@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaList } from "react-icons/fa";
 import { PiSquaresFourDuotone } from "react-icons/pi";
+import PropertyType from './PropertyType';
+import PropertyList from './PropertyList';
 
 const ApartmentList = () => {
     return (
@@ -56,14 +58,15 @@ const ApartmentList = () => {
                         </div>
                     </div>
                     <div className="lg:mt-10 mt-5">
-                       <div className="flex justify-between">
-                         <div className="w-4/12">
-                           
-                         </div>
-                         <div className="w-4/12">
-                            
-                         </div>
-                       </div>
+                        <div className="flex justify-between gap-5">
+                            <div className="lg:w-3/12">
+                                {/* properType.jsx  */}
+                                <PropertyType></PropertyType>
+                            </div>
+                            <div className="lg:w-9/12">
+                                <PropertyList></PropertyList>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
