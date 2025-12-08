@@ -1,8 +1,13 @@
 import React from 'react'
+import PropertiHome from '../components/PropertiHome'
+import ApartmentList from '../components/ApartmentList'
 
 const Page = () => {
   return (
-    <div className=''>properties page done</div>
+    <>
+     <PropertiHome></PropertiHome>
+     <ApartmentList></ApartmentList>
+    </>
   )
 }
 

@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
             <footer className="w-full bg-[#171B2A] relative pt-[120px] lg:pb-[100px] pb-5">
-                <div className="absolute -top-[70px] left-1/2 -translate-x-1/2 w-11/12 lg:w-9/12 bg-[#FF5A3C] lg:py-10 py-6 px-6 lg:px-10 shadow-lg">
+                {/* <div className="absolute -top-[70px] left-1/2 -translate-x-1/2 w-11/12 lg:w-9/12 bg-[#FF5A3C] lg:py-10 py-6 px-6 lg:px-10 shadow-lg">
                     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
                         <div>
                             <h2 className="text-white font-poppins font-bold text-2xl lg:text-3xl">
@@ -22,7 +22,7 @@ const Footer = () => {
                             Explore Properties →
                         </button>
                     </div>
-                </div>
+                </div> */}
                 <div className="lg:w-9/12 w-11/12 mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                     <div>
                         <h3 className="text-white font-poppins font-semibold text-[20px] mb-3">

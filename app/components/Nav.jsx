@@ -52,8 +52,9 @@ const Nav = () => {
                     </button>
                 </div>
                 <ul className="flex flex-col gap-y-4 pl-6 mt-4">
-                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Home</a></li>
-                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Properties</a></li>
+                    <li><Link href="/" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Home</Link></li>
+                    <li><Link href="/properties" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Properties</Link></li>
+                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]"></a></li>
                     <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Property</a></li>
                     <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Blog</a></li>
                     <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Pages</a></li>
