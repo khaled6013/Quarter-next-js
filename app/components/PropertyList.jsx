@@ -3,7 +3,7 @@ import { FiMaximize2, FiHeart, FiPlus } from 'react-icons/fi';
 import { IoLocationOutline, IoSearch } from "react-icons/io5";
 import { BiBed, BiBath, BiArea } from "react-icons/bi";
 
-const PropertyList = ({ activeView }) => {
+const PropertyList = ({ activeView, itemsPerPage }) => {
     const properties = [
         {
             id: 1,
@@ -15,7 +15,7 @@ const PropertyList = ({ activeView }) => {
             baths: 2,
             sqft: 3450,
             price: "349,00",
-            agent: "Agent Pakulla", 
+            agent: "Agent Pakulla",
         },
         {
             id: 2,
@@ -57,25 +57,73 @@ const PropertyList = ({ activeView }) => {
             id: 5,
             image: "/image/sl3.png",
             type: "For Rent",
-            title: "Luxury Villa",
-            address: "Miami Beach, FL",
-            beds: 5,
-            baths: 4,
-            sqft: 5600,
-            price: "850,00",
+            title: "Sea View Apartment",
+            address: "San Diego, CA",
+            beds: 3,
+            baths: 2,
+            sqft: 2800,
+            price: "600,00",
             agent: "Agent Pakulla",
         },
         {
             id: 6,
             image: "/image/sl3.png",
             type: "For Rent",
-            title: "Luxury Villa",
-            address: "Miami Beach, FL",
+            title: "Downtown Loft",
+            address: "Chicago, IL",
+            beds: 2,
+            baths: 1,
+            sqft: 1500,
+            price: "300,00",
+            agent: "Agent Pakulla",
+        },
+        {
+            id: 7,
+            image: "/image/sl1.png",
+            type: "For Sale",
+            title: "Cozy Family Home",
+            address: "Austin, TX",
+            beds: 3,
+            baths: 2,
+            sqft: 2200,
+            price: "450,000",
+            agent: "John Doe",
+        },
+        {
+            id: 8,
+            image: "/image/sl2.png",
+            type: "For Rent",
+            title: "Modern Duplex",
+            address: "Seattle, WA",
+            beds: 4,
+            baths: 3,
+            sqft: 3200,
+            price: "2,500",
+            agent: "Jane Smith",
+        },
+        {
+            id: 9,
+            image: "/image/sl3.png",
+            type: "For Sale",
+            title: "Garden Villa",
+            address: "Orlando, FL",
             beds: 5,
             baths: 4,
-            sqft: 5600,
-            price: "850,00",
-            agent: "Agent Pakulla",
+            sqft: 4000,
+            price: "750,000",
+            agent: "Mike Ross",
+        },
+        {
+            id: 10,
+            image: "/image/sl1.png",
+            type: "For Rent",
+            title: "Penthouse Suite",
+            address: "New York, NY",
+            beds: 3,
+            baths: 3,
+            sqft: 3500,
+            price: "5,000",
+            agent: "Rachel Green",
         }
     ];
 
@@ -87,7 +135,7 @@ const PropertyList = ({ activeView }) => {
             </div>
             
             <div className={`lg:mt-6 mt-3 ${activeView === 'grid' ? 'grid grid-cols-1 md:grid-cols-2 gap-6' : 'flex flex-col gap-6'}`}>
-                {properties.map((item) => (
+                {properties.slice(0, itemsPerPage).map((item) => (
                     <div key={item.id} className={`group bg-white rounded-lg border border-[#E9E9E9] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden ${activeView === 'list' ? 'flex flex-col lg:flex-row' : ''}`}>
                         
                         <div className={`relative overflow-hidden ${activeView === 'list' ? 'lg:w-[40%] h-60 lg:h-auto' : 'h-60'}`}>
@@ -97,6 +145,7 @@ const PropertyList = ({ activeView }) => {
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
+
                         <div className={`p-6 ${activeView === 'list' ? 'lg:w-[60%] flex flex-col justify-center' : ''}`}>
                             <div className="flex justify-between items-start">
                                 <div>
@@ -146,7 +195,7 @@ const PropertyList = ({ activeView }) => {
                                     </div>
                                 ) : (
                                     <div className="flex items-center gap-2">
-                                        <div className='w-8 h-8 rounded-full bg-gray-200'></div> 
+                                        <div className='w-8 h-8 rounded-full bg-gray-200'></div>
                                         <span className="text-[#5C727D] text-[14px] font-nunito">{item.agent || "Agent Info"}</span>
                                     </div>
                                 )}
