@@ -4,13 +4,17 @@ import React, { useState } from "react";
 import { FiUser, FiHeart, FiSearch } from "react-icons/fi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
+    const pathName = usePathname()
+    
+    
 
     return (
         <>
-            <div className="bg-white w-full pt-5 pb-[15px]">
+            <div className="bg-white w-full pt-5 pb-[15px] sticky top-0 left-0 z-50 shadow-md">
                 <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className="flex justify-between items-center">
                         <div>
@@ -20,8 +24,8 @@ const Nav = () => {
                         </div>
                         <div className="hidden lg:flex items-center gap-x-8">
                             <ul className="flex items-center gap-x-9">
-                                <li><Link href="/" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Home</Link></li>
-                                <li><Link href="/properties" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Properties</Link></li>
+                                <li><Link href="/" className={`${pathName == "/"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Home</Link></li>
+                                <li><Link href="/properties" className={`${pathName == "/properties"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Properties</Link></li>
                                 <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Property</a></li>
                                 <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Blog</a></li>
                                 <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Pages</a></li>
