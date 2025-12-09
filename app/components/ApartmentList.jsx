@@ -86,7 +86,7 @@ const ApartmentList = () => {
                                 <PropertyType />
                             </div>
                             <div className="lg:w-9/12 w-full">
-                                <PropertyList  />
+                                <PropertyList activeView={activeView} />
                             </div>
                         </div>
                     </div>
