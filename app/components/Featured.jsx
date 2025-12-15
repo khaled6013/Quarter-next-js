@@ -105,10 +105,12 @@ const Featured = () => {
             },
             {
                 breakpoint: 1024,
+                slidesToScroll: 1,
                 settings: { slidesToShow: 2 }
             },
             {
                 breakpoint: 640,
+                slidesToScroll: 1,
                 settings: { slidesToShow: 1 }
             }
         ]

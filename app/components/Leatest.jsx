@@ -6,7 +6,7 @@ import { FiCalendar } from "react-icons/fi";
 
 const Leatest = () => {
     return (
-        <section className='bg-white lg:pt-24 lg:pb-40 py-12'>
+        <section className='bg-white lg:pt-24 lg:pb-30 pt-12 pb-20'>
             <div className="lg:w-9/12 w-11/12 mx-auto">
                 <div className="mb-12 text-center">
                     <p className='bg-[#FFEDE8] text-[#FF5A3C] font-bold px-5 py-1 rounded-full w-fit text-sm mb-3 font-nunito text-center mx-auto'>News & Blogs</p>

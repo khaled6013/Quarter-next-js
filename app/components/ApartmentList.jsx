@@ -158,7 +158,7 @@ const ApartmentList = () => {
 
     return (
         <>
-            <div ref={listTopRef} className="lg:py-20 py-10 bg-white relative">
+            <div ref={listTopRef} className="lg:pt-24 lg:pb-30 pt-12 pb-20 bg-white relative">
                 <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
                         <h2 className='font-bold text-[#0A2C3D] text-[22px] lg:text-[25px] font-poppins text-center lg:text-left'>

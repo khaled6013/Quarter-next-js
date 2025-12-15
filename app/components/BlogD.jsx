@@ -74,7 +74,7 @@ const BlogD = () => {
 
     return (
         <>
-            <div className="lg:py-20 py-10 bg-white">
+            <div className="lg:pt-24 lg:pb-30 pt-12 pb-20 bg-white">
                 <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className="flex flex-col lg:flex-row justify-between gap-10">
                         <div className="lg:w-8/12 w-full flex flex-col gap-y-12">

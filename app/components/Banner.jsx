@@ -2,7 +2,7 @@
 import React from "react";
 
 const Banner = () => {
-  
+
   return (
     <>
       <div className="bg-[#F2F6F7] lg:py-[100px] py-12 relative ">
@@ -51,33 +51,33 @@ const Banner = () => {
             </div>
           </div>
 
-        <div className="flex lg:absolute lg:bottom-[-50px]  lg:left-1/2 lg:-translate-x-1/2 lg:w-9/12 w-full z-20! mt-10 lg:mt-0">
-          <div className="bg-white shadow-xl justify-between  lg:w-9/12 w-11/12 px-8 py-8 flex flex-col lg:flex-row gap-4 items-center">
-            <select className="w-full bg-white border border-gray-300 px-4 py-3 outline-1 outline-[#FF5A3C] text-[#5C5B7B] font-bold font-nunito">
-              <option>Choose Area</option>
-              <option>Dhaka</option>
-              <option>Chattogram</option>
-              <option>Sylhet</option>
-            </select>
-            <select className="w-full bg-white border border-gray-300 px-4 py-3 outline-1 outline-[#FF5A3C]  text-[#5C5B7B] font-bold font-nunito">
-              <option>Property Status</option>
-              <option>Rent</option>
-              <option>Sale</option>
-            </select>
-            <select className="w-full bg-white border border-gray-300 px-4 py-3 outline-1 outline-[#FF5A3C]  text-[#5C5B7B] font-bold font-nunito">
-              <option>Property Type</option>
-              <option>Apartment</option>
-              <option>Villa</option>
-              <option>Office</option>
-            </select>
-            <div className="flex items-center gap-x-6">
-              <img src="/image/se.png" alt="se" />
-              <button className="bg-[#FF5A3C] hover:bg-[#e64d31] duration-200 text-white text-[14px] font-poppins px-10 py-3 w-full lg:w-[170px] cursor-pointer">
-                FIND NOW
-              </button>
+          <div className="flex lg:absolute lg:bottom-[-50px] lg:w-9/12 w-11/12 z-20! mt-10 lg:mt-0">
+            <div className="bg-white shadow-xl justify-between  lg:w-9/12 w-11/12 px-8 py-8 flex flex-col lg:flex-row gap-4 items-center">
+              <select className="w-full bg-white border border-gray-300 px-4 py-3 outline-1 outline-[#FF5A3C] text-[#5C5B7B] font-bold font-nunito">
+                <option>Choose Area</option>
+                <option>Dhaka</option>
+                <option>Chattogram</option>
+                <option>Sylhet</option>
+              </select>
+              <select className="w-full bg-white border border-gray-300 px-4 py-3 outline-1 outline-[#FF5A3C]  text-[#5C5B7B] font-bold font-nunito">
+                <option>Property Status</option>
+                <option>Rent</option>
+                <option>Sale</option>
+              </select>
+              <select className="w-full bg-white border border-gray-300 px-4 py-3 outline-1 outline-[#FF5A3C]  text-[#5C5B7B] font-bold font-nunito">
+                <option>Property Type</option>
+                <option>Apartment</option>
+                <option>Villa</option>
+                <option>Office</option>
+              </select>
+              <div className="flex items-center gap-x-6">
+                <img src="/image/se.png" alt="se" />
+                <button className="bg-[#FF5A3C] hover:bg-[#e64d31] duration-200 text-white text-[14px] font-poppins px-10 py-3 w-full lg:w-[170px] cursor-pointer">
+                  FIND NOW
+                </button>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </>

@@ -8,7 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Contact = () => {
     return (
-        <section className="bg-white lg:py-24 py-12">
+        <section className="bg-white lg:pt-24 lg:pb-30 pt-12 pb-20">
             <div className="lg:w-9/12 w-11/12 mx-auto">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
                     <div className="lg:w-1/2 w-full">

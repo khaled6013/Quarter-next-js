@@ -42,7 +42,7 @@ const ServiceCon = () => {
     ];
 
     return (
-        <section className="bg-white lg:py-24 py-12">
+        <section className="bg-white lg:pt-24 lg:pb-30 pt-12 pb-20">
             <div className="lg:w-9/12 w-11/12 mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-[#0A2C3D] font-bold lg:text-[45px] text-[30px] font-poppins mb-3">
