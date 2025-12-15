@@ -28,8 +28,8 @@ const Nav = () => {
                                 <li><Link href="/properties" className={`${pathName == "/properties"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Properties</Link></li>
                                 <li><Link href="/blog" className={`${pathName == "/blog"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Blog</Link></li>
                                 <li><Link href="/faq" className={`${pathName == "/faq"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Faq</Link></li>
-                                <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Services</a></li>
-                                <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Contact</a></li>
+                                <li><Link href="/serviceP" className={`${pathName == "/serviceP"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Services</Link></li>
+                                <li><Link href="/contact" className={`${pathName == "/contact"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Contact</Link></li>
                             </ul>
                             <div className="flex items-center gap-x-4">
                                 <div className="w-[45px] h-[45px] bg-white shadow-md flex items-center justify-center cursor-pointer text-[#0A2C3D] hover:text-[#FF5A3C]">
@@ -59,9 +59,9 @@ const Nav = () => {
                     <li><Link href="/" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Home</Link></li>
                     <li><Link href="/properties" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Properties</Link></li>
                     <li><Link href="/blog" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Blog</Link></li>
-                    <li><a href="/faq" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Faq</a></li>
-                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Services</a></li>
-                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Contact</a></li>
+                    <li><Link href="/faq" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Faq</Link></li>
+                    <li><Link href="/serviceP" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Services</Link></li>
+                    <li><Link href="/contact" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Contact</Link></li>
                 </ul>
                 <div className="flex items-center gap-x-4 pl-6 mt-6">
                     <div className="w-[45px] h-[45px] bg-white shadow-md flex items-center justify-center cursor-pointer text-[#0A2C3D]">
