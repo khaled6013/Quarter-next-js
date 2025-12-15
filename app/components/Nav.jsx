@@ -27,7 +27,8 @@ const Nav = () => {
                                 <li><Link href="/" className={`${pathName == "/"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Home</Link></li>
                                 <li><Link href="/properties" className={`${pathName == "/properties"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Properties</Link></li>
                                 <li><Link href="/blog" className={`${pathName == "/blog"? 'font-bold font-nunito text-[18px] text-[#FF5A3C]':'font-bold font-nunito text-[18px] text-[#0A2C3D]'} `}>Blog</Link></li>
-                                <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Pages</a></li>
+                                <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Faq</a></li>
+                                <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Services</a></li>
                                 <li><a href="#" className="font-bold font-nunito text-[18px] text-[#0A2C3D]">Contact</a></li>
                             </ul>
                             <div className="flex items-center gap-x-4">
@@ -58,7 +59,8 @@ const Nav = () => {
                     <li><Link href="/" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Home</Link></li>
                     <li><Link href="/properties" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Properties</Link></li>
                     <li><Link href="/blog" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Blog</Link></li>
-                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Pages</a></li>
+                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Faq</a></li>
+                    <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Services</a></li>
                     <li><a href="#" className="font-bold font-nunito text-[20px] text-[#0A2C3D]">Contact</a></li>
                 </ul>
                 <div className="flex items-center gap-x-4 pl-6 mt-6">

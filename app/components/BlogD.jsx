@@ -223,7 +223,7 @@ const BlogD = () => {
                                 <div className="flex flex-col gap-6">
                                     {latestBlogs.map((blog) => (
                                         <div key={blog.id} className="flex gap-4 items-center group cursor-pointer">
-                                            <div className="w-20 h-20 bg-gray-200 rounded overflow-hidden flex-shrink-0">
+                                            <div className="w-20 h-20 bg-gray-200 rounded overflow-hidden shrink-0">
                                                 <img src="/image/lt1.png" alt="" className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
                                             </div>
                                             <div>
